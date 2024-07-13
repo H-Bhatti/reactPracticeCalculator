@@ -1,17 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import * as calc from "./Cals";
+import "./index.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <>
+    <li>Banana sum of 1 ,2 is {calc.add(1, 2)}</li>
+    <li>Banana minus of 1 ,2 is {calc.substract(1, 2)}</li>
+    <li>Banana multiply of 1 ,2 is {calc.multiply(1, 2)}</li>
+    <li>Banana Devide of 1 ,2 is {calc.devide(1, 2)}</li>
+  </>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
